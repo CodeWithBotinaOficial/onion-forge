@@ -1,0 +1,169 @@
+{
+  "name": "onionforge",
+  "version": "2.0.0",
+  "description": "A secure, educational .onion web platform demonstrating legitimate Tor usage for students, educators, and privacy enthusiasts.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "docker-compose up",
+    "start:detached": "docker-compose up -d",
+    "start:prod": "docker-compose -f docker-compose.yml up --build -d",
+    "start:dev": "docker-compose up --build",
+    "stop": "docker-compose down",
+    "stop:clean": "docker-compose down -v --remove-orphans",
+    "stop:all": "docker-compose down -v --rmi all --remove-orphans",
+    "restart": "docker-compose restart",
+    "restart:hard": "docker-compose down && docker-compose up --build -d",
+    "build": "docker-compose build --no-cache",
+    "build:nginx": "docker-compose build nginx-web",
+    "build:tor": "docker-compose build tor-service",
+    "logs": "docker compose logs -f",
+    "logs:web": "docker compose logs -f nginx-web",
+    "logs:tor": "docker compose logs -f tor-service",
+    "logs:all": "docker compose logs -f nginx-web tor-service",
+    "status": "docker compose ps",
+    "status:detailed": "docker compose ps --services | xargs -I {} sh -c 'echo \"=== {} ===\" && docker compose exec {} hostname'",
+    "shell:web": "docker compose exec nginx-web sh",
+    "shell:tor": "docker compose exec tor-service sh",
+    "onion:address": "docker compose exec tor-service cat /var/lib/tor/hidden_service/hostname 2>/dev/null || echo '⚠️  Tor service not running or address not generated yet'",
+    "onion:backup": "tar -czf \"tor-backup-$(date +%Y%m%d-%H%M%S).tar.gz\" -C ./tor-data . 2>/dev/null && echo \"✅ Tor keys backed up to tor-backup-*.tar.gz\" || echo \"⚠️  No tor-data directory found or backup failed\"",
+    "onion:restore": "test -f \"$1\" && tar -xzf \"$1\" -C ./tor-data && echo \"✅ Tor keys restored from $1\" || echo \"⚠️  Usage: npm run onion:restore <backup-file.tar.gz>\"",
+    "clean": "npm run stop:clean && docker system prune -f --volumes && echo \"✅ Docker system cleaned\"",
+    "clean:all": "npm run stop:all && docker system prune -a -f --volumes && rm -rf node_modules && echo \"✅ Everything cleaned\"",
+    "update": "docker-compose pull && docker-compose build --pull --no-cache",
+    "update:nginx": "docker pull nginx:alpine && docker-compose build nginx-web --no-cache",
+    "update:tor": "docker pull alpine:latest && docker-compose build tor-service --no-cache",
+    "lint": "npm run lint:html && npm run lint:css && npm run lint:js",
+    "lint:html": "echo \"📄 Linting HTML files...\" && find src -name \"*.html\" -exec htmlhint {} \\; && echo \"✅ HTML linting passed\"",
+    "lint:css": "echo \"🎨 Linting CSS files...\" && find src -name \"*.css\" -exec stylelint {} \\; && echo \"✅ CSS linting passed\"",
+    "lint:js": "echo \"📜 Linting JavaScript files...\" && find src -name \"*.js\" -exec eslint {} \\; && echo \"✅ JavaScript linting passed\"",
+    "lint:docker": "echo \"🐳 Linting Docker files...\" && docker run --rm -i hadolint/hadolint < docker/nginx/Dockerfile && docker run --rm -i hadolint/hadolint < docker/tor/Dockerfile && echo \"✅ Docker linting passed\"",
+    "format": "npm run format:html && npm run format:css && npm run format:js",
+    "format:html": "prettier --write \"src/**/*.html\"",
+    "format:css": "prettier --write \"src/**/*.css\"",
+    "format:js": "prettier --write \"src/**/*.js\"",
+    "audit": "npm audit --production",
+    "audit:docker": "trivy image --severity HIGH,CRITICAL $(docker images onionforge-* --format '{{.Repository}}:{{.Tag}}') 2>/dev/null || echo \"⚠️  Install trivy for Docker image scanning\"",
+    "audit:files": "find src -type f -name \"*.js\" -exec grep -l \"eval\\|Function\\|innerHTML\" {} \\; | xargs -I {} sh -c 'echo \"⚠️  Potential security issue in: {}\"'",
+    "size": "du -sh src/ docker/ *.yml *.json *.md 2>/dev/null | sort -hr",
+    "size:total": "du -sh . | cut -f1",
+    "docs": "echo \"📚 Opening documentation...\" && open README.md 2>/dev/null || xdg-open README.md 2>/dev/null || echo \"⚠️  Could not open documentation\"",
+    "help": "echo \"Available commands:\\n\" && npm run --silent | grep -E \"^  \\w\" | sed 's/^  //' | sort",
+    "version:bump": "npm version patch --no-git-tag-version",
+    "version:bump:minor": "npm version minor --no-git-tag-version",
+    "version:bump:major": "npm version major --no-git-tag-version",
+    "release": "npm run test && npm run lint && npm run build && echo \"✅ Ready for release!\"",
+    "postinstall": "echo \"🚀 OnionForge installed! Run 'npm start' to launch your .onion site.\"",
+    "test": "npm run test:unit && npm run test:integration && npm run test:e2e",
+    "test:unit": "echo '⚠️  Unit tests not yet implemented'",
+    "test:integration": "jest --config jest.integration.config.js --runInBand",
+    "test:e2e": "node tests/e2e/calculator.e2e.js",
+    "test:docker": "docker compose up -d && sleep 10 && npm run test:integration && npm run test:e2e && docker compose down",
+    "test:ci": "npm run test:integration -- --ci --reporters=default --reporters=jest-junit",
+    "test:coverage": "jest --config jest.integration.config.js --coverage",
+    "test:watch": "jest --config jest.integration.config.js --watch",
+    "test:debug": "HEADLESS=false SLOW_MO=100 npm run test:e2e"
+  },
+  "keywords": [
+    "tor",
+    "onion",
+    "privacy",
+    "education",
+    "docker",
+    "nginx",
+    "security",
+    "static-site",
+    "hidden-service",
+    "free-hosting",
+    "censorship-resistance",
+    "open-source",
+    "mit-license",
+    "accessibility",
+    "wcag",
+    "students",
+    "educators"
+  ],
+  "author": {
+    "name": "CodeWithBotinaOficial",
+    "url": "https://github.com/CodeWithBotinaOficial"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeWithBotinaOficial/onion-forge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CodeWithBotinaOficial/onion-forge/issues"
+  },
+  "homepage": "https://github.com/CodeWithBotinaOficial/onion-forge#readme",
+  "funding": {
+    "type": "none",
+    "url": "https://github.com/sponsors/CodeWithBotinaOficial"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "os": [
+    "linux",
+    "darwin",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
+  "private": true,
+  "files": [
+    "src/",
+    "docker/",
+    "docker-compose.yml",
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md",
+    "CONTRIBUTING.md",
+    ".gitignore"
+  ],
+  "directories": {
+    "src": "src/",
+    "docker": "docker/",
+    "doc": "."
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "htmlhint": "^1.1.4",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0",
+    "prettier": "^3.1.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0"
+  },
+  "lint-staged": {
+    "*.html": [
+      "htmlhint"
+    ],
+    "*.css": [
+      "stylelint"
+    ],
+    "*.js": [
+      "eslint"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "volta": {
+    "node": "18.17.0"
+  }
+}

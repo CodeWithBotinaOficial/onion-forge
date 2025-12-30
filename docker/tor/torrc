@@ -1,0 +1,15 @@
+SocksPort 0
+Log notice stdout
+
+# Hidden service configuration
+HiddenServiceDir /var/lib/tor/hidden_service/
+HiddenServiceVersion 3
+HiddenServicePort 80 nginx-web:80
+
+# Don't run as a relay
+ORPort 0
+ExitPolicy reject *:*
+
+# Speed up startup
+TestSocks 1
+WarnUnsafeSocks 0

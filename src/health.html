@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Health Check</title>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
+    <h1 style="color: #4CAF50;">✅ OnionForge Nginx</h1>
+    <p>Status: <strong>Healthy</strong></p>
+    <p>Server Time: <span id="time"></span></p>
+    <p>This is a health check endpoint for Docker containers.</p>
+    <script>
+        document.getElementById('time').textContent = new Date().toISOString();
+    </script>
+</body>
+</html>

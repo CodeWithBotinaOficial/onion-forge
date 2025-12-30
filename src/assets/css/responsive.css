@@ -1,0 +1,466 @@
+/* ==========================================================================
+   ONIONFORGE - RESPONSIVE STYLES
+   Mobile-first responsive design system
+   ========================================================================== */
+
+/* ==========================================================================
+   1. MEDIA QUERY MIXINS (Custom Properties for Breakpoints)
+   ========================================================================== */
+:root {
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1536px;
+}
+
+/* ==========================================================================
+   2. SMALL DEVICES (Mobile, < 640px)
+   ========================================================================== */
+@media (max-width: 639px) {
+    /* Typography Adjustments */
+    h1 {
+        font-size: var(--font-size-3xl);
+    }
+    
+    h2 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    h3 {
+        font-size: var(--font-size-xl);
+    }
+    
+    .section-title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-3xl);
+    }
+    
+    /* Layout Adjustments */
+    .container {
+        padding: 0 var(--space-md);
+    }
+    
+    .section {
+        padding: var(--space-2xl) 0;
+    }
+    
+    /* Header Mobile Styles */
+    .header-content {
+        flex-wrap: wrap;
+    }
+    
+    .main-nav {
+        display: none;
+        width: 100%;
+        order: 3;
+        margin-top: var(--space-md);
+    }
+    
+    .main-nav.active {
+        display: block;
+    }
+    
+    .main-nav .nav-list {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .mobile-menu-toggle[aria-expanded="true"] .bar:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    
+    .mobile-menu-toggle[aria-expanded="true"] .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-menu-toggle[aria-expanded="true"] .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding-top: calc(var(--space-2xl) + 60px);
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+    
+    .hero-visual {
+        order: -1;
+    }
+    
+    .onion-visualization {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .layer-1 { width: 300px; height: 300px; }
+    .layer-2 { width: 225px; height: 225px; top: 37.5px; left: 37.5px; }
+    .layer-3 { width: 150px; height: 150px; top: 75px; left: 75px; }
+    .onion-core { width: 75px; height: 75px; top: 112.5px; left: 112.5px; }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: var(--space-lg);
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+    }
+    
+    /* Mission Grid */
+    .mission-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    /* Calculator */
+    .calculator-container {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+    
+    .calc-controls {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--space-xs);
+    }
+    
+    .calc-btn {
+        padding: var(--space-sm);
+        font-size: var(--font-size-md);
+    }
+    
+    /* Steps & Architecture */
+    .steps-container {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+    
+    .steps-timeline::before {
+        left: 20px;
+    }
+    
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: var(--font-size-md);
+    }
+    
+    .architecture-diagram {
+        padding: var(--space-lg);
+    }
+    
+    .diagram {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+    
+    .diagram-arrow {
+        transform: rotate(90deg);
+    }
+    
+    /* Security Features */
+    .security-features {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .security-guarantee {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+    
+    .cta-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ==========================================================================
+   3. MEDIUM DEVICES (Tablets, 640px - 1023px)
+   ========================================================================== */
+@media (min-width: 640px) and (max-width: 1023px) {
+    h1 {
+        font-size: var(--font-size-4xl);
+    }
+    
+    h2 {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .container {
+        padding: 0 var(--space-lg);
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+    
+    .mission-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-lg);
+    }
+    
+    .calculator-container {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+    
+    .steps-container {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+    
+    .architecture-diagram {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .security-features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-lg);
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+    
+    .footer-links {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-lg);
+    }
+}
+
+/* ==========================================================================
+   4. LARGE DEVICES (Desktops, 1024px - 1279px)
+   ========================================================================== */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .container {
+        max-width: 1024px;
+    }
+    
+    .hero-content {
+        gap: var(--space-2xl);
+    }
+    
+    .onion-visualization {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .layer-1 { width: 350px; height: 350px; }
+    .layer-2 { width: 262.5px; height: 262.5px; top: 43.75px; left: 43.75px; }
+    .layer-3 { width: 175px; height: 175px; top: 87.5px; left: 87.5px; }
+    .onion-core { width: 87.5px; height: 87.5px; top: 131.25px; left: 131.25px; }
+}
+
+/* ==========================================================================
+   5. EXTRA LARGE DEVICES (Large Desktops, 1280px+)
+   ========================================================================== */
+@media (min-width: 1280px) {
+    /* Container max-width already set to 1200px */
+    .hero-content {
+        gap: var(--space-3xl);
+    }
+}
+
+/* ==========================================================================
+   6. PRINT STYLES
+   ========================================================================== */
+@media print {
+    * {
+        color: #000 !important;
+        background: #fff !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    .site-header,
+    .hero-actions,
+    .calculator-demo,
+    .footer-message,
+    .tor-required-note {
+        display: none;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .section {
+        padding: 1cm 0;
+        break-inside: avoid;
+    }
+    
+    .mission-card,
+    .security-card {
+        border: 1px solid #ccc !important;
+        break-inside: avoid;
+    }
+    
+    .code-block {
+        border: 1px solid #ccc;
+        background: #f5f5f5 !important;
+        overflow-wrap: break-word;
+    }
+}
+
+/* ==========================================================================
+   7. PREFERS-REDUCED-MOTION
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .onion-layer {
+        animation: none !important;
+    }
+    
+    .btn::after {
+        display: none;
+    }
+    
+    .logo-icon,
+    .onion-core {
+        animation: none !important;
+    }
+}
+
+/* ==========================================================================
+   8. DARK MODE ENHANCEMENTS (System Preference)
+   ========================================================================== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: #0a0a14;
+        --bg-secondary: #1a1a2e;
+        --bg-tertiary: #2d3047;
+        --text-primary: #ffffff;
+        --text-secondary: #8d99ae;
+    }
+}
+
+/* ==========================================================================
+   9. HIGH CONTRAST MODE
+   ========================================================================== */
+@media (prefers-contrast: high) {
+    :root {
+        --color-primary: #5a00b5;
+        --color-secondary: #00875a;
+        --color-accent: #c90032;
+        
+        --text-primary: #000000;
+        --text-secondary: #333333;
+        
+        --border-light: 2px solid #000;
+        --border-medium: 2px solid #000;
+        --border-heavy: 3px solid #000;
+    }
+    
+    body {
+        background: #ffffff;
+        color: #000000;
+    }
+    
+    .card,
+    .calculator-demo,
+    .mission-card {
+        border: 2px solid #000;
+        background: #ffffff;
+    }
+}
+
+/* ==========================================================================
+   10. TOUCH DEVICE OPTIMIZATIONS
+   ========================================================================== */
+@media (hover: none) and (pointer: coarse) {
+    .btn:hover,
+    .card:hover,
+    .mission-card:hover,
+    .security-card:hover,
+    .calc-btn:hover {
+        transform: none !important;
+    }
+    
+    .btn::after {
+        display: none;
+    }
+    
+    .nav-link,
+    .calc-btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .mobile-menu-toggle {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
+
+/* ==========================================================================
+   11. LANDSCAPE ORIENTATION
+   ========================================================================== */
+@media (orientation: landscape) and (max-height: 500px) {
+    .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .hero-content {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .onion-visualization {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .layer-1 { width: 250px; height: 250px; }
+    .layer-2 { width: 187.5px; height: 187.5px; top: 31.25px; left: 31.25px; }
+    .layer-3 { width: 125px; height: 125px; top: 62.5px; left: 62.5px; }
+    .onion-core { width: 62.5px; height: 62.5px; top: 93.75px; left: 93.75px; }
+    
+    .section {
+        padding: var(--space-2xl) 0;
+    }
+}
