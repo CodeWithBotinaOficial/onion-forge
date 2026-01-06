@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="29" failures="29" errors="0" time="0.443">
+  <testsuite name="🧮 Calculator End-to-End Tests" errors="0" failures="29" skipped="0" timestamp="2026-01-06T18:06:48" time="0.4" tests="29">
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Basic Functionality should display initial state correctly" name="🧮 Calculator End-to-End Tests Calculator Basic Functionality should display initial state correctly" time="0.001">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Basic Functionality should handle number input" name="🧮 Calculator End-to-End Tests Calculator Basic Functionality should handle number input" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Basic Functionality should handle decimal input" name="🧮 Calculator End-to-End Tests Calculator Basic Functionality should handle decimal input" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Basic Functionality should prevent multiple decimal points" name="🧮 Calculator End-to-End Tests Calculator Basic Functionality should prevent multiple decimal points" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Basic Functionality should clear display with C button" name="🧮 Calculator End-to-End Tests Calculator Basic Functionality should clear display with C button" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Basic Functionality should handle backspace" name="🧮 Calculator End-to-End Tests Calculator Basic Functionality should handle backspace" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Operations should perform addition" name="🧮 Calculator End-to-End Tests Calculator Operations should perform addition" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Operations should perform subtraction" name="🧮 Calculator End-to-End Tests Calculator Operations should perform subtraction" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Operations should perform multiplication" name="🧮 Calculator End-to-End Tests Calculator Operations should perform multiplication" time="0.001">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Operations should perform division" name="🧮 Calculator End-to-End Tests Calculator Operations should perform division" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Operations should handle division by zero" name="🧮 Calculator End-to-End Tests Calculator Operations should handle division by zero" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Operations should perform percentage calculation" name="🧮 Calculator End-to-End Tests Calculator Operations should perform percentage calculation" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Operations should handle complex expressions" name="🧮 Calculator End-to-End Tests Calculator Operations should handle complex expressions" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Operations should chain operations" name="🧮 Calculator End-to-End Tests Calculator Operations should chain operations" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Keyboard Support should handle number keys" name="🧮 Calculator End-to-End Tests Calculator Keyboard Support should handle number keys" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Keyboard Support should handle operator keys" name="🧮 Calculator End-to-End Tests Calculator Keyboard Support should handle operator keys" time="0.001">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Keyboard Support should handle decimal key" name="🧮 Calculator End-to-End Tests Calculator Keyboard Support should handle decimal key" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Keyboard Support should handle backspace key" name="🧮 Calculator End-to-End Tests Calculator Keyboard Support should handle backspace key" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Keyboard Support should handle escape key for clear" name="🧮 Calculator End-to-End Tests Calculator Keyboard Support should handle escape key for clear" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Accessibility buttons should have ARIA labels" name="🧮 Calculator End-to-End Tests Calculator Accessibility buttons should have ARIA labels" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Accessibility display should have ARIA live region" name="🧮 Calculator End-to-End Tests Calculator Accessibility display should have ARIA live region" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Accessibility history should have ARIA live region" name="🧮 Calculator End-to-End Tests Calculator Accessibility history should have ARIA live region" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Accessibility should be navigable by keyboard" name="🧮 Calculator End-to-End Tests Calculator Accessibility should be navigable by keyboard" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Accessibility should have proper contrast ratios" name="🧮 Calculator End-to-End Tests Calculator Accessibility should have proper contrast ratios" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Security should not use eval() function" name="🧮 Calculator End-to-End Tests Calculator Security should not use eval() function" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Security should sanitize input" name="🧮 Calculator End-to-End Tests Calculator Security should sanitize input" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Security should not leak data to external domains" name="🧮 Calculator End-to-End Tests Calculator Security should not leak data to external domains" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Performance should respond quickly to button presses" name="🧮 Calculator End-to-End Tests Calculator Performance should respond quickly to button presses" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="🧮 Calculator End-to-End Tests Calculator Performance should handle rapid operation chains" name="🧮 Calculator End-to-End Tests Calculator Performance should handle rapid operation chains" time="0">
+      <failure>Error: Nginx container is not serving on port 8080. Make sure containers are running: docker-compose up -d
+    at Object.&lt;anonymous&gt; (/home/zeus/Development environment/Tor/onion-forge/tests/e2e/calculator.e2e.js:33:13)
+    at Promise.then.completed (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusHook (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:281:40)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:95:7)
+    at _runTestsForDescribeBlock (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/zeus/Development environment/Tor/onion-forge/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -43,8 +43,6 @@ module.exports = {
     }]
   ],
   
-  // Setup files
-  setupFilesAfterEnv: ['<rootDir>/tests/setup/integration.setup.js'],
   
   // Ignore patterns
   testPathIgnorePatterns: [

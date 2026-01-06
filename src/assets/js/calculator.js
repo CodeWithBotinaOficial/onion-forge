@@ -738,18 +738,22 @@
          */
         handleAction(action) {
             try {
-                switch (action) {
-                    case CONFIG.ACTIONS.CLEAR:
-                        this.handleClear();
-                        break;
-                    case CONFIG.ACTIONS.BACKSPACE:
-                        this.handleBackspace();
-                        break;
-                    case CONFIG.ACTIONS.EQUALS:
-                        this.handleEquals();
-                        break;
-                    default:
-                        console.warn(`Unknown action: ${action}`);
+                if (OperationFactory.isOperator(action)) {
+                    this.handleOperatorInput(action);
+                } else {
+                    switch (action) {
+                        case CONFIG.ACTIONS.CLEAR:
+                            this.handleClear();
+                            break;
+                        case CONFIG.ACTIONS.BACKSPACE:
+                            this.handleBackspace();
+                            break;
+                        case CONFIG.ACTIONS.EQUALS:
+                            this.handleEquals();
+                            break;
+                        default:
+                            console.warn(`Unknown action: ${action}`);
+                    }
                 }
             } catch (error) {
                 this.handleError(error);
